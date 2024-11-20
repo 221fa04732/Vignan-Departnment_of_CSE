@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Thin Scrollbar for Webkit Browsers */
+::-webkit-scrollbar {
+    width: 6px; /* Adjust width for horizontal scrollbars */
+    height: 6px; /* Adjust height for vertical scrollbars */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(100, 100, 255, 0.5); /* Thumb color */
+    border-radius: 10px; /* Rounded edges for the thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(100, 100, 255, 0.8); /* Darker thumb on hover */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1); /* Track background */
+    border-radius: 10px; /* Rounded edges for the track */
+  }
+  
+  /* For Firefox */
+  * {
+    scrollbar-width: thin; /* Makes the scrollbar thin */
+    scrollbar-color: rgba(100, 100, 255, 0.5) transparent; /* Thumb and track colors */
+  }
+
+
+    body {
+      @apply font-inter;
+    }
+  
+  
