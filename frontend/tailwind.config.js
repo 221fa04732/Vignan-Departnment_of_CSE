@@ -13,6 +13,11 @@ export default {
       },
       height: {
         'readmoreheight': '500px',
+        'height1' : '700px',
+        'height2' : '370px'
+      },
+      maxHeight:{
+        'height1' : '700px',
       },
       fontFamily: {
         grotesk: ["Familjen Grotesk"],
@@ -32,9 +37,19 @@ export default {
           '90%': { transform: 'translate(2px, -1px) rotate(2deg)' },
           '100%': { transform: 'translate(0, 0) rotate(0)' },
         },
+        slideIn: {
+          '0%': { transform: 'translateX(100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        slideOut: {
+          '0%': { transform: 'translateX(0)', opacity: '1' },
+          '100%': { transform: 'translateX(100%)', opacity: '0' },
+        },
       },
       animation: {
         vibrateZigzag: 'vibrateZigzag 1s infinite linear',
+        'slide-in': 'slideIn 0.7s ease-out forwards', // Adjusted for smoother effect
+        'slide-out': 'slideOut 0.7s ease-in forwards', // Adjusted for smoother effect
       },
       perspective: {
         DEFAULT: '1000px',
@@ -42,10 +57,13 @@ export default {
       transformOrigin: {
         'center': 'center',
       },
+      rotate: {
+        "180": "180deg",
+      },
     },
   },
   plugins: [
-    require('tailwindcss/plugin')(({ addUtilities }) => {
+    plugin(({ addUtilities }) => {
       addUtilities({
         '.perspective': {
           perspective: '1000px',

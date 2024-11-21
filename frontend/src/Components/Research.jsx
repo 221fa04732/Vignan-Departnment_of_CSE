@@ -1,6 +1,8 @@
-export default function Research() {
-    return (
-        <div>Research</div>
-    )
-}
+import React from "react";
 
+export default function ResearchPage() {
+    return (
+        <div></div>
+        
+    );
+}

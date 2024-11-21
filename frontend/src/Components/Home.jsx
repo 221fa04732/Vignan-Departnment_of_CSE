@@ -1,8 +1,17 @@
-import React, { useState } from 'react';
 import { motion } from "framer-motion";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import ReadMore from './ReadMore';
 import CollegeDesc from './ReadMore/CollegeDesc';
 import ReadMoreButton from './ReadMore/ReadMoreButton';
+import HodMessage from './ReadMore/HodMessage';
+import MissionVision from './ReadMore/MissionVision';
+import FAQ from './FAQ';
+import CarrerPath from "./CarrerPath";
+import Reviews from "./Reviews";
+import Outcome from "./Outcome";
+
+
 
 
 export default function Home() {
@@ -25,12 +34,15 @@ export default function Home() {
         </p >
         <p className="text-md mb-10 max-w-3xl">The Department of CSE is accredited by ABET for six years from 2024 to 2030, by the National accreditation body NBA from 2020-23 and 2023-26. < ReadMore show={<ReadMoreButton />} content={<CollegeDesc/>} /> </p>
         <div className="space-x-6">
-          <motion.button
+          
+            
+            < ReadMore show={<motion.button
             whileHover={{ scale: 1.1 }}
-            className="px-8 py-4 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition">Vision & Mission</motion.button>
-          <motion.button
+            className="px-8 py-4 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl transition">Vision & Mission</motion.button>} content={<MissionVision />} />
+
+            < ReadMore show={<motion.button
             whileHover={{ scale: 1.1 }}
-            className="px-8 py-4 bg-gray-900 bg-opacity-80 rounded-lg text-lg font-semibold hover:bg-opacity-90 shadow-lg hover:shadow-xl transition">HOD Message</motion.button>
+            className="px-8 py-4 bg-gray-900 bg-opacity-80 rounded-lg text-lg font-semibold hover:bg-opacity-90 shadow-lg hover:shadow-xl transition">HOD Message</motion.button>} content={<HodMessage />} />
         </div>
       </motion.section>
       <section
@@ -39,7 +51,7 @@ export default function Home() {
       >
         <div className="container mx-auto px-6 text-center">
           <motion.h3
-            className="text-3xl font-bold mb-12"
+            className="text-5xl font-bold font-grotesk mb-12"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -80,6 +92,15 @@ export default function Home() {
             </div>            
           </motion.div>
         </div>
+
+        < Outcome />
+
+        <CarrerPath />
+
+        < Reviews />
+
+        < FAQ />
+
       </section>
 
     </div>
