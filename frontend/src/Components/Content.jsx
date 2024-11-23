@@ -21,6 +21,7 @@ export default function Content() {
     const navigate = useNavigate();
     useEffect(() => {
         navigate(path);
+        scrollTo({'top' : '0px'})
     }, [path]);
 
     return (

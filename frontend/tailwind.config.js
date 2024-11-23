@@ -48,8 +48,8 @@ export default {
       },
       animation: {
         vibrateZigzag: 'vibrateZigzag 1s infinite linear',
-        'slide-in': 'slideIn 0.7s ease-out forwards', // Adjusted for smoother effect
-        'slide-out': 'slideOut 0.7s ease-in forwards', // Adjusted for smoother effect
+        'slide-in': 'slideIn 0.7s ease-out forwards',
+        'slide-out': 'slideOut 0.7s ease-in forwards', 
       },
       perspective: {
         DEFAULT: '1000px',
