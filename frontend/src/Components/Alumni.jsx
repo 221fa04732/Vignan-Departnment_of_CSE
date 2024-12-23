@@ -1,7 +1,7 @@
 export default function Alumni() {
     return (
-        <div>
-            <h1>Alumni</h1>
+        <div className="bg-gray-200 h-screen flex items-center justify-center text-2xl"> 
+            Alumni Page 😢
         </div>
     )
 }

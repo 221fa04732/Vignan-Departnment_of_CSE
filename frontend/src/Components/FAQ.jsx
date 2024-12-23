@@ -32,7 +32,7 @@ export default function FAQ()
   ];
 
   return (
-    <div className="mx-auto px-16 pt-16 pb-6 bg-white">
+    <div className="mx-auto px-16 pt-16 pb-6 bg-gray-100">
       <h2 className="text-5xl font-bold font-grotesk text-gray-900 text-center mb-10">
             Frequently Asked Questions
       </h2>

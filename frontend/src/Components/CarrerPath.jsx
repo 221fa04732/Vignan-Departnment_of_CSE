@@ -10,7 +10,7 @@ export default function CarrerPath()
 
     const [iconRef, iconInView] = useInView({ triggerOnce: true });
 
-    return (<div className="bg-orange-700 my-24 text-white">
+    return (<div className="bg-orange-700  text-white">
         <div className="p-16">
             <p className="text-center text-5xl font-bold font-grotesk pb-10">Career Paths After Graduation</p>
             <p className="pb-12 text-md">Our graduates enjoy diverse career paths, with around 90% securing placements in top companies and government sectors, thanks to a strong curriculum and industry partnerships. Approximately 8% pursue higher education at prestigious institutions, supported by a research-driven academic environment and exams like GATE, GRE, and GMAT. We also encourage entrepreneurship, providing resources to help students launch successful ventures. This comprehensive approach ensures our graduates are well-prepared for both professional and academic success.</p>

@@ -3,7 +3,7 @@ import HeaderButton from "./HeaderButton"
 
 export default function HomeFacilities()
 {
-    return (<div className="px-16 pb-16">
+    return (<div className="px-16 py-16 bg-gray-100">
         <p className="text-5xl text-center font-bold font-grotesk mb-12">Explore Facilities to Support you</p>
         <div className="grid grid-cols-3 gap-6 place-items-center">
             <div>

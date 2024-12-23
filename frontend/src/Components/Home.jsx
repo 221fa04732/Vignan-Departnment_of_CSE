@@ -11,6 +11,7 @@ import CarrerPath from "./CarrerPath";
 import Reviews from "./Reviews";
 import Outcome from "./Outcome";
 import HomeFacilities from "./HomeFacilities";
+import HomeFaculty from "./HomeFaculty";
 
 
 export default function Home() {
@@ -50,10 +51,10 @@ export default function Home() {
       </div>
       <section
         id="about"
-        className="relative py-16 bg-white text-gray-900 w-full">
-        <div className="container mx-auto px-6 text-center">
+        className="relative py-16 bg-gray-100 text-gray-900 w-full">
+        <div className="container mx-auto px-6 ">
           <motion.h3
-            className="text-5xl font-bold font-grotesk mb-12"
+            className="text-5xl text-center font-bold font-grotesk mb-12"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -100,6 +101,8 @@ export default function Home() {
         <CarrerPath />
 
         <HomeFacilities />
+
+        <HomeFaculty />
 
         < Reviews />
 

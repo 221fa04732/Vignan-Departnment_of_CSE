@@ -69,7 +69,7 @@ export default function Reviews()
   };
 
   return (
-    <div className="reviews-container pb-8 px-8 bg-white">
+    <div className="reviews-container pb-8 px-8 bg-gray-100">
       <h2 className="text-5xl font-bold font-grotesk text-center mb-8">What People Say About Us</h2>
       <Slider {...settings}>
         {reviews.map((review, index) => (
