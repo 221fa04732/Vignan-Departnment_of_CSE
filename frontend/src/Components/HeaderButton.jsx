@@ -1,15 +1,13 @@
-import { useRecoilState } from "recoil"
-import { ContentAtom } from "../Atoms/ContentAtom"
-
+import { useNavigate } from "react-router-dom"
 
 export default function HeaderButton(props)
 {
 
-    const [contentpath, setContentpath] = useRecoilState(ContentAtom)
+    const navigate = useNavigate();
 
     return(<div className="hover:text-purple-300 transition duration-300">
         <button onClick={()=>{
-            setContentpath(props.path)
+            navigate(props.path)
         }}>
             {props.name}
         </button>

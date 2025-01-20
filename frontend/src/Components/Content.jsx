@@ -1,7 +1,5 @@
-import { Suspense, lazy, useEffect } from "react";
-import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
-import { RecoilRoot, useRecoilState, useRecoilValue } from "recoil";
-import { ContentAtom } from "../Atoms/ContentAtom";
+import { Suspense, lazy } from "react";
+import { Routes, Route } from "react-router-dom";
 
 
 const Home = lazy(() => import("./Home"));
@@ -16,18 +14,11 @@ const ContactUs = lazy(()=> import("./ContactUs"))
 
 export default function Content() {
 
-    const [path, setPath] = useRecoilState(ContentAtom);
-
-    const navigate = useNavigate();
-    useEffect(() => {
-        navigate(path);
-        scrollTo({'top' : '0px'})
-    }, [path]);
-
     return (
         <div className="pt-16">
             <Suspense fallback={<div>Loading ...</div>}>
                 <Routes>
+                    <Route index element={<Home />} />
                     <Route path="/Home" element={<Home />} />
                     <Route path="/Research" element={<Research />} />
                     <Route path="/Faculty" element={<Faculty />} />
